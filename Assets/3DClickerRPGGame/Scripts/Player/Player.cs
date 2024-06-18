@@ -15,7 +15,11 @@ public class Player : MonoBehaviour
     public Animator Animator { get; private set; }
     public CharacterController Controller { get; private set; }
 
+    public PlayerCondition Condition { get; set; }
+
     private PlayerStateMachine stateMachine;
+
+    public bool IsDead = false;
 
     private void Awake()
     {
